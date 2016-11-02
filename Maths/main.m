@@ -11,11 +11,10 @@
 #import "InputHandler.h"
 #import "ScoreKeeper.h"
 #import "QuestionManager.h"
+#import "QuestionFactory.h"
 
 int main(int argc, const char * argv[]) {
     @autoreleasepool {
-        
-        ScoreKeeper *score = [[ScoreKeeper alloc]init];
         
         BOOL gameOn = YES;
         
@@ -23,12 +22,14 @@ int main(int argc, const char * argv[]) {
         printf("Maths!\n Welcome to the Maths game!\n ");
         printf("To quit: type in quit.\n To check your score: type in score.\n");
         
+        ScoreKeeper *score = [[ScoreKeeper alloc]init];
+        QuestionFactory *questionFactory = [[QuestionFactory alloc]init];
         QuestionManager *manager = [[QuestionManager alloc]init];
+        
         
         while (gameOn == YES){
                         
-            Question *nquestion = [[Question alloc]init];
-            NSLog(@"%@\n", nquestion.question);
+            Question *nquestion = [questionFactory generateRandomQuestion];
             [manager addQuestionToArray: nquestion];
             
             InputHandler *IHandler = [[InputHandler alloc]init];
@@ -41,12 +42,6 @@ int main(int argc, const char * argv[]) {
                 break;
             }
             
-            if ([convertedInput  isEqual: @"score"]){
-                NSLog(@"%@",[score scoreList]);
-                continue;
-            }
-            
-            
             NSInteger check = [convertedInput integerValue];
             
             if (check == [nquestion answer]) {
@@ -56,7 +51,7 @@ int main(int argc, const char * argv[]) {
                 NSLog(@"Wrong!\n");
                 score.wrong = score.wrong +1;
             }
-            
+            NSLog(@"%@",[score scoreList]);
             NSLog(@"%@",[manager timeOutput]);
             
         }

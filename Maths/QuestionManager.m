@@ -11,6 +11,7 @@
 
 @interface QuestionManager ()
 @property (nonatomic) NSMutableArray *questions;
+@property (nonatomic) int totalTime;
 @end
 
 @implementation QuestionManager
@@ -25,14 +26,13 @@
 
 -(NSString*) timeOutput{
     
-    NSInteger totalTime;
     for (NSInteger i = 0; i < self.questions.count; i++) {
-    totalTime += [[self.questions objectAtIndex:i] answerTime];
+    _totalTime += [[self.questions objectAtIndex:i] answerTime];
     }
     
-    NSInteger averageTime = totalTime / self.questions.count;
+    NSInteger averageTime = _totalTime / self.questions.count;
     
-    NSString *time = [NSString stringWithFormat:@"total time: %lds, average time: %lds", (long)totalTime, (long)averageTime];
+    NSString *time = [NSString stringWithFormat:@"total time: %ds, average time: %lds", _totalTime, (long)averageTime];
     return time;
 }
 

@@ -10,6 +10,9 @@
 #import "Question.h"
 
 @interface QuestionManager : NSObject
+
 -(NSString*) timeOutput;
 -(void) addQuestionToArray:(Question*)question;
+
+
 @end
