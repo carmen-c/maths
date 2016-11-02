@@ -8,9 +8,10 @@
 
 /* Begin PBXBuildFile section */
 		1F2046601DC92760005B0C2B /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F20465F1DC92760005B0C2B /* main.m */; };
-		1F2046681DC92D1F005B0C2B /* AdditionalQuestion.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F2046671DC92D1F005B0C2B /* AdditionalQuestion.m */; };
+		1F2046681DC92D1F005B0C2B /* Question.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F2046671DC92D1F005B0C2B /* Question.m */; };
 		1F20466B1DC96198005B0C2B /* InputHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F20466A1DC96198005B0C2B /* InputHandler.m */; };
 		1F20466E1DC9688A005B0C2B /* ScoreKeeper.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F20466D1DC9688A005B0C2B /* ScoreKeeper.m */; };
+		1F86BBE61DCA6AFD003AFD91 /* QuestionManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F86BBE51DCA6AFD003AFD91 /* QuestionManager.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -28,12 +29,14 @@
 /* Begin PBXFileReference section */
 		1F20465C1DC92760005B0C2B /* Maths */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = Maths; sourceTree = BUILT_PRODUCTS_DIR; };
 		1F20465F1DC92760005B0C2B /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		1F2046661DC92D1F005B0C2B /* AdditionalQuestion.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AdditionalQuestion.h; sourceTree = "<group>"; };
-		1F2046671DC92D1F005B0C2B /* AdditionalQuestion.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AdditionalQuestion.m; sourceTree = "<group>"; };
+		1F2046661DC92D1F005B0C2B /* Question.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Question.h; sourceTree = "<group>"; };
+		1F2046671DC92D1F005B0C2B /* Question.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Question.m; sourceTree = "<group>"; };
 		1F2046691DC96198005B0C2B /* InputHandler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = InputHandler.h; sourceTree = "<group>"; };
 		1F20466A1DC96198005B0C2B /* InputHandler.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = InputHandler.m; sourceTree = "<group>"; };
 		1F20466C1DC9688A005B0C2B /* ScoreKeeper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ScoreKeeper.h; sourceTree = "<group>"; };
 		1F20466D1DC9688A005B0C2B /* ScoreKeeper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ScoreKeeper.m; sourceTree = "<group>"; };
+		1F86BBE41DCA6AFD003AFD91 /* QuestionManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QuestionManager.h; sourceTree = "<group>"; };
+		1F86BBE51DCA6AFD003AFD91 /* QuestionManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QuestionManager.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -67,12 +70,14 @@
 			isa = PBXGroup;
 			children = (
 				1F20465F1DC92760005B0C2B /* main.m */,
+				1F86BBE41DCA6AFD003AFD91 /* QuestionManager.h */,
+				1F86BBE51DCA6AFD003AFD91 /* QuestionManager.m */,
 				1F20466C1DC9688A005B0C2B /* ScoreKeeper.h */,
 				1F20466D1DC9688A005B0C2B /* ScoreKeeper.m */,
 				1F2046691DC96198005B0C2B /* InputHandler.h */,
 				1F20466A1DC96198005B0C2B /* InputHandler.m */,
-				1F2046661DC92D1F005B0C2B /* AdditionalQuestion.h */,
-				1F2046671DC92D1F005B0C2B /* AdditionalQuestion.m */,
+				1F2046661DC92D1F005B0C2B /* Question.h */,
+				1F2046671DC92D1F005B0C2B /* Question.m */,
 			);
 			path = Maths;
 			sourceTree = "<group>";
@@ -133,8 +138,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1F86BBE61DCA6AFD003AFD91 /* QuestionManager.m in Sources */,
 				1F20466E1DC9688A005B0C2B /* ScoreKeeper.m in Sources */,
-				1F2046681DC92D1F005B0C2B /* AdditionalQuestion.m in Sources */,
+				1F2046681DC92D1F005B0C2B /* Question.m in Sources */,
 				1F20466B1DC96198005B0C2B /* InputHandler.m in Sources */,
 				1F2046601DC92760005B0C2B /* main.m in Sources */,
 			);
@@ -257,6 +263,7 @@
 				1F2046651DC92760005B0C2B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
