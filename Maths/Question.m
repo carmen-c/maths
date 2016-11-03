@@ -17,11 +17,6 @@
         _rightValue = arc4random_uniform(90) +10;
         _leftValue = arc4random_uniform(90) +10;
         
-//        NSInteger answer = _leftValue + _rightValue;
-//        NSString * combinedNumbers = [NSString stringWithFormat:@"%ld + %ld\n", _leftValue, _rightValue];
-//        _question = combinedNumbers;
-//        _answer = answer;
-        
     }
 
     return self;

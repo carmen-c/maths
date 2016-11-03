@@ -92,6 +92,7 @@
 				1F2046691DC96198005B0C2B /* InputHandler.h */,
 				1F20466A1DC96198005B0C2B /* InputHandler.m */,
 				1F2046661DC92D1F005B0C2B /* Question.h */,
+				1F2046671DC92D1F005B0C2B /* Question.m */,
 				1F86BBE71DCA8D2B003AFD91 /* AdditionQuestion.h */,
 				1F86BBE81DCA8D2B003AFD91 /* AdditionQuestion.m */,
 				1F86BBEA1DCA8D3C003AFD91 /* SubtractionQuestion.h */,
@@ -102,7 +103,6 @@
 				1F86BBF11DCA8D64003AFD91 /* DivisionQuestion.m */,
 				1F86BBF31DCA9D96003AFD91 /* QuestionFactory.h */,
 				1F86BBF41DCA9D96003AFD91 /* QuestionFactory.m */,
-				1F2046671DC92D1F005B0C2B /* Question.m */,
 			);
 			path = Maths;
 			sourceTree = "<group>";
